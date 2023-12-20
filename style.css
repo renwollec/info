@@ -1,0 +1,363 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color1: #000000;
+    --color2: #f3ecec;
+    --color3: #d02561;
+    --color4: #04091a;
+    --color5: #707070;
+    --color6: #ffbf00;
+}
+
+body {
+    font-family: 'az';
+
+}
+
+html {
+    font-family: 'az';
+    font-size: 28px;
+    overflow-x: hidden;
+}
+
+@font-face {
+    font-family: az;
+    src: url(font/Az.ttf);
+}
+
+.container {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.btn {
+    padding: .5rem 1rem;
+    background: var(--color6);
+    cursor: pointer;
+    transition: all .5s;
+}
+
+a .btn {
+    border-radius: 5px;
+    background: var(--color6);
+    color: var(--color1);
+}
+
+a {
+    color: var(--color2);
+    text-decoration: none;
+}
+
+.yello {
+    color: var(--color6);
+}
+
+/* Accueil */
+.hero {
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero .heroG {
+    width: 100%;
+    height: 100%;
+    /*-------------------*/
+}
+
+.hero .heroG {
+    background-color: var(--color1);
+    color: var(--color2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero .heroG div {
+    width: 80%;
+    text-align: center;
+}
+
+.hero .heroG div h1 {
+    font-size: 3rem;
+}
+
+.hero .heroG div p {
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5rem;
+}
+
+.hero .logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    color: var(--color2);
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.hero .socials {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.hero .socials ul {
+    list-style: none;
+    font-size: 1.5rem;
+}
+
+.hero .socials ul li {
+    margin-left: 1rem;
+    background: var(--color1);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    padding: 1.5rem;
+}
+
+.hero .socials ul li a {
+    color: var(--color2);
+    transition: color .5s;
+}
+
+.hero .socials ul li a:hover {
+    color: var(--color6);
+}
+
+.hero .socials ul {
+    display: flex;
+}
+
+/* Discord */
+.discord {
+    background: var(--color2);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.discord h2 {
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+/* RoadMap */
+.roadmap {
+    background: var(--color1);
+    padding: 4rem 0;
+    color: var(--color2);
+}
+
+.roadmap h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.roadmap .bloc {
+    background: var(--color4);
+    margin-bottom: 3rem;
+    padding: 1rem;
+    position: relative;
+    margin-left: 2px;
+}
+
+.roadmap h4 {
+    margin: 1rem 0;
+}
+
+.roadmap p {
+    line-height: 1.5rem;
+}
+
+.roadmap .number {
+    position: absolute;
+    top: -1rem;
+    left: calc(1rem - 1px);
+    background: var(--color6);
+    color: var(--color1);
+    padding: 1rem;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roadmap .number.off {
+    background: var(--color2);
+    color: var(--color1);
+}
+
+.roadmap .container {
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    left: 3rem;
+    height: 100%;
+    width: 2px;
+    background: var(--color6);
+    top: 30px;
+}
+
+/* RoadMap */
+.bnfutil {
+    background: var(--color2);
+    padding: 4rem 0;
+    color: var(--color1);
+}
+
+.bnfutil h2 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.bnfutil .bloq {
+    margin-bottom: 3rem;
+    padding: 1rem;
+    position: relative;
+    margin-left: 2px;
+
+    border-color: var(--color1);
+    border-top: 2px solid;
+    border-right: 2px solid;
+    border-left: 2px solid;
+}
+
+.bnfutil h4 {
+    margin: 1rem 0;
+}
+
+.bnfutil p {
+    line-height: 1.5rem;
+}
+
+.bnfutil .container {
+    position: relative;
+}
+
+/* FAQ */
+.accordion-container {
+    max-width: 100%;
+}
+
+.accordion-item {
+    margin-bottom: 15px;
+}
+
+.accordion-header {
+    font-family: 'az';
+    font-size: 28px;
+    color: var(--color1);
+    padding: 15px;
+    border-color: var(--color1);
+    border-width: 2px 2px 1px 2px;
+    border-style: solid;
+    width: 100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px 5px 0px 0px;
+    transition: background-color 0.3s ease;
+}
+
+.accordion-content {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-color: var(--color1);
+    border-width: 1px 2px 2px 2px;
+    border-style: solid;
+    border-radius: 0px 0px 5px 5px;
+    background-color: var(--color6);
+    color: var(--color1);
+    overflow: hidden;
+    padding: 0 15px;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+.icon {
+    font-size: 35px;
+    transition: transform 0.3s ease;
+}
+
+.active .icon {
+    transform: rotate(45deg);
+}
+
+.accordion-container .accordion-item .accordion-content p a {
+    color: var(--color1);
+    transition: 0.3s;
+    text-decoration: underline;
+}
+
+.accordion-container .accordion-item .accordion-content p a:hover {
+    color: var(--color3);
+}
+
+/* Footer */
+footer {
+    background: var(--color1);
+    color: var(--color2);
+    padding: 1rem 0;
+}
+
+.footer__flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer__flex ul {
+    list-style: none;
+}
+
+.footer__flex ul li a {
+    color: var(--color2);
+    text-decoration: none;
+}
+
+/* Responsive */
+@media all and (max-width: 767px) {
+    .hero .heroG {
+        width: 100%;
+        height: 100%;
+    }
+
+    .hero .heroG div h1 {
+        font-size: 2rem;
+    }
+
+    .hero .heroG div {
+        text-align: left;
+    }
+
+    .hero .socials ul {
+        list-style: none;
+        font-size: 1.25rem;
+    }
+
+}
